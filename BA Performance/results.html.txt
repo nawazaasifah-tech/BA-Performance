@@ -1,0 +1,17 @@
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Results</p>
+      <h1>Transformations that show what structured coaching can do.</h1>
+      <p class="lead">Add real before and after photos, reviews and video testimonials here.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <article class="result-card"><div class="comparison"><div class="before">Before</div><div class="after">After</div></div><div class="result-body"><h3>James</h3><p>Lost 14kg in 5 months.</p></div></article>
+      <article class="result-card"><div class="comparison"><div class="before">Before</div><div class="after">After</div></div><div class="result-body"><h3>Emily</h3><p>Built muscle while losing body fat.</p></div></article>
+      <article class="result-card"><div class="comparison"><div class="before">Before</div><div class="after">After</div></div><div class="result-body"><h3>Connor</h3><p>First marathon after 6 months coaching.</p></div></article>
+    </div>
+  </section>
+</main>

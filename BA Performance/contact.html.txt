@@ -1,0 +1,34 @@
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Book Consultation</p>
+      <h1>Ready to start? Tell me where you are now and where you want to go.</h1>
+      <p class="lead">Complete the enquiry form and connect it to your email or booking tool when ready.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact">
+      <aside class="contact-card">
+        <h2>Contact Details</h2>
+        <ul class="ticks">
+          <li>Instagram: @baperformance</li>
+          <li>TikTok: @baperformance</li>
+          <li>Email: hello@baperformance.co.uk</li>
+        </ul>
+      </aside>
+
+      <div class="contact-card">
+        <form class="form" data-form>
+          <label>Name<input required name="name"></label><span class="error"></span>
+          <label>Email<input required type="email" name="email"></label><span class="error"></span>
+          <label>Phone<input required name="phone"></label><span class="error"></span>
+          <label>Goals<select required name="goal"><option value="">Select a goal</option><option>Fat loss</option><option>Muscle gain</option><option>Strength</option><option>General fitness</option></select></label><span class="error"></span>
+          <label>Message<textarea required name="message"></textarea></label><span class="error"></span>
+          <button class="btn btn-primary" type="submit">Book Consultation</button>
+          <p class="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,25 @@
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">About BA Performance</p>
+      <h1>Coaching built on structure, education and genuine accountability.</h1>
+      <p class="lead">Add your qualifications, story and professional photos here.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2>Your Coach</h2>
+        <p class="lead">BA Performance helps busy people build stronger bodies, better habits and more confidence with personalised coaching.</p>
+        <ul class="ticks">
+          <li>Qualified personal training background</li>
+          <li>Evidence-based training philosophy</li>
+          <li>Realistic nutrition and habit coaching</li>
+          <li>Mission-led personal support</li>
+        </ul>
+      </div>
+      <div class="photo"></div>
+    </div>
+  </section>
+</main>
