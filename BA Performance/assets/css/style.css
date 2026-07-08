@@ -386,6 +386,10 @@ h2 { font-size: clamp(2rem, 4vw, 3.8rem); }
   gap: 14px;
 }
 
+.hidden-field {
+  display: none;
+}
+
 input,
 select,
 textarea {

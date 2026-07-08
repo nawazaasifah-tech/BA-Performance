@@ -70,10 +70,11 @@ if (slides.length) {
 const form = document.querySelector("[data-form]");
 
 if (form) {
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     let ok = true;
+    const status = form.querySelector(".status");
 
     form.querySelectorAll("[required]").forEach((field) => {
       const error = field.parentElement.nextElementSibling;
@@ -86,10 +87,23 @@ if (form) {
       }
     });
 
-    if (ok) {
-      form.querySelector(".status").textContent =
-        "Thanks. Your enquiry is ready to send once connected to email or a booking tool.";
+    if (!ok) return;
+
+    if (status) status.textContent = "Sending...";
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString(),
+      });
+
+      if (!response.ok) throw new Error("Form submission failed");
+
+      if (status) status.textContent = "Thanks. Your enquiry has been sent.";
       form.reset();
+    } catch (error) {
+      if (status) status.textContent = "Sorry, the enquiry could not be sent. Please try again.";
     }
   });
 }
